@@ -46,4 +46,4 @@ io.on('connection',(socket)=>{
   socket.on('disconnect',()=>{for(const [code,st] of rooms){let changed=false;if(st.p1&&st.p1.id===socket.id){st.p1=null;changed=true;}if(st.p2&&st.p2.id===socket.id){st.p2=null;changed=true;}if(changed) io.to(code).emit('state',st);if(!st.p1&&!st.p2) rooms.delete(code);} });
 });
 
-server.listen(PORT, ()=> console.log(`Football Lineups Duel realtime at http://localhost:${PORT}`));
+server.listen(PORT, ()=> console.log(`Football Lineups Duel realtime at https://render.com/docs/web-services#port-binding`));
