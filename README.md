@@ -1,2 +1,2 @@
-# t-lineups-duel-web-
+football-lineups-duel-realtime.html → index.html
 game
